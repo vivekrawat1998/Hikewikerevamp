@@ -10,26 +10,26 @@ const testimonials = [
     name: "Rahul Bhatia",
     title: "Owner of Saffron Indian Kitchen",
     image:
-      "/backpacker-standing-sunrise-viewpoint-ja-bo-village-mae-hong-son-province-thailand.jpg",
+      "/concept/backpacker-standing-sunrise-viewpoint-ja-bo-village-mae-hong-son-province-thailand.jpg",
     text: "The platform has been like a superpower for restaurants that increases sales and drives new customers consistently.",
   },
   {
     name: "Priya Sharma",
     title: "Founder, Curry Craft",
     image:
-      "/front-view-young-female-going-hiking-white-background-campus-forest-nature-air-mountain-height.jpg",
+      "/concept/front-view-young-female-going-hiking-white-background-campus-forest-nature-air-mountain-height.jpg",
     text: "I was amazed by how easy it was to manage everything. Our revenue has grown by 40% in just 6 months!",
   },
   {
     name: "Amit Patel",
     title: "Manager, Spice Villa",
-    image: "/hiker-walking-up-rock.jpg",
+    image: "/concept/hiker-walking-up-rock.jpg",
     text: "A seamless experience for both customers and our staff. Highly recommend this for any restaurant.",
   },
   {
     name: "Sonia Kapoor",
     title: "Chef & Owner, Masala Magic",
-    image: "/front-view-young-female-going-hiking-white-background-campus-forest-nature-air-mountain-height.jpg",
+    image: "/concept/front-view-young-female-going-hiking-white-background-campus-forest-nature-air-mountain-height.jpg",
     text: "The insights and automation features help us stay ahead in the competitive food industry.",
   },
 ];

@@ -52,7 +52,7 @@ export default function Footer() {
       <div className="absolute bottom-5  left-0 w-full px-6 sm:px-10">
         <img
           className="w-full  h-auto object-cover mx-auto"
-          src="/hikewikefooter.svg"
+          src="/concept/hikewikefooter.svg"
           alt="Hikewike Footer"
         />
       </div>
