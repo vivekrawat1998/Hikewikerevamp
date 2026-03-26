@@ -40,9 +40,8 @@ const WhatYouGet = () => {
 
                     <h2 className="font-main text-3xl md:text-[52px] text-black font-extrabold leading-tight">
                         Everything that matters.
-                        <span className="block italic font-normal">
+                        <br />
                             Nothing that doesn’t.
-                        </span>
                     </h2>
 
                 </div>
@@ -63,7 +62,7 @@ const WhatYouGet = () => {
 
                                 {/* Content */}
                                 <div>
-                                    <h3 className="font-main text-black text-[16px] md:text-[18px] mb-2">
+                                    <h3 className="font-bold text-black text-[16px] md:text-[18px] mb-2">
                                         {item.title}
                                     </h3>
 

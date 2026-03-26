@@ -1,125 +1,127 @@
 import React from "react";
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
+
+import { Navigation, Pagination, Autoplay } from "swiper/modules";
 
 const EditionSection = () => {
-    return (
-        <section className="bg-white font-second ">
-            <div className="max-w-7xl md:px-0 px-3 mx-auto">
+  return (
+    <section className="bg-[#06062B] w-full py-20 px-4 font-sans">
+      <div className="max-w-7xl mx-auto">
 
-                {/* Top Heading */}
-                <div className="text-center mb-20">
-                    <p className="text-xs tracking-[0.25em] text-black mb-4">
-                        NOW OPEN
-                    </p>
+        {/* Heading */}
+        <div className="text-center text-white mb-16">
+          <p className="text-xs tracking-widest mb-4">NOW OPEN</p>
 
-                    <h2 className="text-3xl md:text-[52px] font-main font-extrabold text-black mb-4 leading-tight">
-                        Edition 01.
-                        <span className="block italic font-normal">
-                            The Hill Edition.
-                        </span>
-                    </h2>
+          <h2 className="text-4xl md:text-[48px] font-bold font-Regular mb-4">
+            The Hill Edition.
+          </h2>
 
-                    <p className="text-black text-[18px] md:text-base max-w-xl mx-auto leading-relaxed">
-                        Every HikeWike edition has a character. Edition 01 is about altitude —
-                        the kind outside your window, and the kind inside your head.
-                    </p>
-                </div>
+          <p className="text-white max-w-3xl mx-auto text-sm md:text-[20px]">
+            Every HikeWike edition has a character. Edition 01 is about altitude —
+            the kind outside your window, and the kind inside your head.
+          </p>
+        </div>
 
-                {/* Main Card */}
-                <div
-                    className="relative grid md:grid-cols-2 border border-gray-200 rounded-xl overflow-hidden shadow-sm hover:shadow-lg transition duration-300"
-                    style={{
-                        backgroundImage: "url('/concept/kumud-mussoorie-villa-3-bhk-9348a7.jpg')",
-                        backgroundSize: "cover",
-                        backgroundPosition: "center",
-                    }}
-                >
-                    <div className="absolute inset-0 bg-black/40"></div>
+        {/* Card */}
+        <div className="grid md:grid-cols-2 bg-white overflow-hidden shadow-lg">
 
-                    {/* LEFT */}
-                    <div className="relative z-10 p-8 md:p-12 text-white">
-                        <span className="text-xs border px-3 py-1 text-black tracking-wider bg-gray-50">
-                            EDITION 01 · 2026
-                        </span>
+          {/* LEFT CONTENT */}
+          <div className="p-8 md:p-10 text-black">
+            <h3 className="text-[18px] md:text-[22px] font-main  font-Regular mb-4">
+              Mussoorie, Uttarakhand
+            </h3>
 
-                        <h3 className="font-main text-white text-2xl md:text-[34px] mt-6 leading-snug">
-                            Mussoorie,
-                            <span className="block italic font-normal">
-                                Uttarakhand.
-                            </span>
-                        </h3>
+            <p className="md:text-[16px]  text-[12px] text-[#000000] mb-6 ">
+              A private estate in the Landour–Mussoorie belt. Himalayan ridgelines
+              at breakfast. Pine forests and cold morning air. A place that strips
+              back the noise so you can hear yourself think — and actually hear
+              the 11 people in the room with you.
+            </p>
 
-                        <p className="text-white text-sm md:text-base mt-5 leading-relaxed">
-                            A private estate in the Landour–Mussoorie belt. Himalayan ridgelines
-                            at breakfast. Pine forests and cold air. A place that strips back the
-                            noise so you can hear yourself think.
-                        </p>
+            {/* Info */}
+            <div className="grid grid-cols-2 gap-6 text-[14px] mb-6">
+              <div>
+                <p className="text-black text-[14px]">LOCATION</p>
+                <p className="font-medium text-black">Landour, Mussoorie</p>
+              </div>
 
-                        {/* Info Grid */}
-                        <div className="grid grid-cols-3 gap-6 mt-8 text-sm">
-                            <div>
-                                <p className="text-white text-xs mb-1">LOCATION</p>
-                                <p className="text-gray-100 font-medium">Landour, Mussoorie</p>
-                            </div>
-                            <div>
-                                <p className="text-white text-xs mb-1">ELEVATION</p>
-                                <p className="text-gray-100 font-medium">2,000m+</p>
-                            </div>
-                            <div>
-                                <p className="text-white text-xs mb-1">DURATION</p>
-                                <p className="text-gray-100 font-medium">5 nights / 6 days</p>
-                            </div>
-                        </div>
+              <div>
+                <p className="text-black text-xs">DATE</p>
+                <p className="font-medium text-black">17 April, 24 April, 1 May</p>
+              </div>
 
-                        <div className="mt-6 text-sm">
-                            <p className="text-white text-xs mb-1">TRAVEL FROM</p>
-                            <p className="text-gray-100 font-medium">Dehradun / Delhi</p>
-                        </div>
+              <div>
+                <p className="text-black text-xs">TRAVEL FROM</p>
+                <p className="font-medium text-black">Delhi to Delhi</p>
+              </div>
 
-                        {/* CTA */}
-                        <button className="mt-10 bg-[#F36F25] font-bold cursor-pointer text-white px-7 py-3 text-xs tracking-[0.15em] hover:scale-105 hover:bg-[#d95f1f] transition duration-300 rounded">
-                            REQUEST INVITE FOR EDITION 01
-                        </button>
-                    </div>
-
-                    {/* RIGHT */}
-                    <div className="relative z-10 p-8 md:p-12 border-t md:border-t-0 md:border-l border-white/20 text-white bg-sec">
-
-                        <h3 className="font-main text-white text-3xl md:text-[42px] mb-2">
-                            ₹37,500
-                        </h3>
-
-                        <p className="text-white text-xs mb-6">
-                            per person · all-inclusive · lock seat at 20% deposit
-                        </p>
-
-                        <ul className="space-y-4 text-sm md:text-base text-white">
-                            <li className="flex items-start gap-2">✓ <span>5 nights private villa, twin share</span></li>
-                            <li className="flex items-start gap-2">✓ <span>All breakfasts + 2 communal dinners</span></li>
-                            <li className="flex items-start gap-2">✓ <span>Guided sunrise trek</span></li>
-                            <li className="flex items-start gap-2">✓ <span>4 structured sessions</span></li>
-                            <li className="flex items-start gap-2">✓ <span>90-day clarity plan</span></li>
-                            <li className="flex items-start gap-2">✓ <span>Community access – lifetime</span></li>
-                            <li className="flex items-start gap-2">✓ <span>Pickup from Dehradun</span></li>
-
-                            <li className="flex items-start gap-2 text-gray-400">✗ <span>Flights not included</span></li>
-                            <li className="flex items-start gap-2 text-gray-400">✗ <span>Lunches excluded</span></li>
-                        </ul>
-
-                        {/* Highlight Box */}
-                        <div className="mt-8 border border-gray-200 p-4 text-xs font-bold text-gray-600 bg-white rounded">
-                            Lock your seat with ₹7,500 deposit. Balance due 30 days before arrival.
-                        </div>
-
-                        {/* Trust Signal */}
-                        <p className="text-[11px] text-gray-400 mt-4">
-                            Limited seats • Small curated group • High intent community
-                        </p>
-                    </div>
-
-                </div>
+              <div>
+                <p className="text-black text-xs">DURATION</p>
+                <p className="font-medium text-black">2 Nights 3 Days</p>
+              </div>
             </div>
-        </section>
-    );
+
+            {/* Price */}
+            <h4 className="text-2xl font-bold mb-2">₹9,999</h4>
+            <p className="text-xs text-black mb-6">
+              per person · all-inclusive · lock seat with 20% deposit
+            </p>
+
+            {/* Buttons */}
+            <div className="flex gap-4">
+              <button className="border border-gray-300 px-5 py-2 text-[16px] rounded hover:bg-gray-100">
+                View itinerary
+              </button>
+
+              <button className="bg-[#F36F25] text-white px-5 py-2 text-[16px] rounded hover:bg-orange-600">
+                Book your seat
+              </button>
+            </div>
+          </div>
+
+          {/* RIGHT IMAGE */}
+            <div className="h-[300px] md:h-auto">
+              <Swiper
+                modules={[Navigation, Pagination, Autoplay]}
+                navigation
+                pagination={{ clickable: true }}
+                autoplay={{ delay: 3000 }}
+                loop={true}
+                className="w-full h-full"
+              >
+                <SwiperSlide>
+                  <img
+                    src="/concept/kumud-mussoorie-villa-3-bhk-9348a7.jpg"
+                    alt="Mussoorie 1"
+                    className="w-full h-full object-cover"
+                  />
+                </SwiperSlide>
+
+                <SwiperSlide>
+                  <img
+                    src="/concept/kumud-mussoorie-villa-3-bhk-9348a7.jpg"
+                    alt="Mussoorie 2"
+                    className="w-full h-full object-cover"
+                  />
+                </SwiperSlide>
+
+                <SwiperSlide>
+                  <img
+                    src="/concept/kumud-mussoorie-villa-3-bhk-9348a7.jpg"
+                    alt="Mussoorie 3"
+                    className="w-full h-full object-cover"
+                  />
+                </SwiperSlide>
+              </Swiper>
+            </div>
+          </div>
+
+      </div>
+    </section>
+  );
 };
 
 export default EditionSection;

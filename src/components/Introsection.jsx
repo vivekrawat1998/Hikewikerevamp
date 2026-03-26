@@ -6,7 +6,7 @@ const Introsection = () => {
             <div className="max-w-4xl mx-auto text-center">
 
                 {/* Small Heading */}
-                <p className="text-xs tracking-[0.2em] text-gray-500 mb-4">
+                <p className="text-xs tracking-[0.2em] text-black mb-4">
                     INTRODUCTION
                 </p>
 
@@ -21,8 +21,8 @@ const Introsection = () => {
                 </p>
 
                 {/* Description */}
-                <p className="text-gray-600 text-[21px] md:text-base leading-relaxed mb-6">
-                    Hikwike was created to bring together curious and ambitious people in a beautiful
+                <p className="text-gray-600 text-[21px] md:text-base  mb-6">
+                    HikeWike was created to bring together curious and ambitious people in a beautiful
                     mountain space where conversations, ideas and friendships happen naturally.
                 </p>
 

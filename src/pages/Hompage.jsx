@@ -5,7 +5,6 @@ const Hero = lazy(() => import("../components/Hero"));
 const ComparisonSection = lazy(() => import("../components/Whyhikewike2"));
 const WhatYouGet = lazy(() => import("../components/Whatyouget"));
 const EditionSection = lazy(() => import("../components/Firstedition"));
-const ProgramSection = lazy(() => import("../components/Programsection"));
 const Introsection = lazy(() => import("../components/Introsection"));
 const FirstBanner = lazy(() => import("../components/banner/FirstBanner"));
 const Conceptsection = lazy(() => import("../components/Conceptsection"));
@@ -48,9 +47,9 @@ const Hompage = () => {
       <Suspense fallback={<Loader />}>
         <EditionSection />
       </Suspense>
-      <Suspense fallback={<Loader />}>
+      {/* <Suspense fallback={<Loader />}>
         <ProgramSection />
-      </Suspense>
+      </Suspense> */}
       <Suspense fallback={<Loader />}>
         <WhatYouGet />
       </Suspense>

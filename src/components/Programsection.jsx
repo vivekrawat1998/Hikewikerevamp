@@ -86,7 +86,7 @@ const ProgramSection = () => {
                                             {item.title}
                                         </p>
 
-                                        <p className="text-xs md:text-sm text-black mt-1 leading-relaxed">
+                                        <p className="text-xs md:text-sm text-black mt-1 ">
                                             {item.desc}
                                         </p>
                                     </div>
